@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="Harrypotter_Ravenclaw.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="grid-container">
+    <div class="item1">
+      <italic>...dann machst du dich nach Ravenclaw, so wett ich, auf die Reise.</italic>
+    </div>
+    <div class="item2">Gr&uuml;nder:<br>
+      Rowena Ravenclaw<br>
+      <br>Tier:<br>Adler<br><br> Farben: <br> Blau & Bronze
+      <br><br>Charakter:<br>Intelligenz, Weisheit, Kreativit&auml;t<br> & Orignialit&auml;t<br>
+      <br>Hauptfiguren:<br>Luna Lovegood, Cho Chang</div>
+    <div class="item3">Ravenclaws Diadem<br><br>Typ:<br>Horkruxe
+      <br><br>Magische Eigenschaften:<br>Es verleiht der Person,<br>die es tr&auml;gt, Weisheit.<br><br><br><br><br><br>Erster
+      Besitzer:<br>Rowena Ravenclaw
+
+    </div>
+    
+
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Ravenclaw/Rovena Ravenclaw.jpg" style="width:40%">
+      <div class="text">Rowena Ravenclaw</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Ravenclaw/Luna Lovegood 2.jpg" style="width:40%">
+      <div class="text">Luna Lovegood</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Ravenclaw/Cho Chang.jpg" style="width:40%">
+      <div class="text">Cho Chang</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Ravenclaw/Ravenclaws Diadem.jpg" style="width:40%">
+      <div class="text">Ravenclaws Diadem</div>
+    </div>
+
+  </div>
+ 
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3500); // Change image every 2 seconds
+    }
+    </script>
+  
+  <div class="back"><a href="../home/home.html">zur&uuml;ck zu Homeseite</a></div>
+
+</body>
+
+</html>

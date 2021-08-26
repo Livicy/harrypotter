@@ -1,0 +1,119 @@
+.item1 { grid-area: topleft; }
+.item2 { grid-area: topright; }
+.item3 { grid-area: botleft; }
+.item4 { grid-area: botright; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'topleft topright'
+    'botleft botright'
+    'footer footer ';
+
+    grid-template-rows: 50% 50% 5%;
+    width: auto;
+    height:100vh;
+    background-image: url("../Bilder/hogwarts2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    
+
+.grid-container > div {
+}
+}
+
+body{ 
+    margin: 0;
+  
+}
+
+.item1 {
+    color: rgb(255, 187,0);
+   
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.item2 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item3 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+.item4 {
+    color: rgb(184,128,25);
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ 
+
+}
+
+.item5 {
+    background-color: black;
+    position: relative;
+    font-size: 20px;
+  color: white;
+  text-align: right; 
+
+  padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.gryffindor:link {
+    color: rgb(255, 187,0);
+}
+.gryffindor:visited {
+    color: rgb(255, 187,0);
+}
+
+.slytherin:link {
+    color: white;
+}
+.slytherin:visited {
+    color: white;
+}
+
+.hufflepuff:link {
+    color: white;
+}
+.hufflepuff:visited {
+    color: white;
+}
+
+.ravenclaw:link {
+    color: rgb(184,128,25);
+}
+.ravenclaw:visited {
+    color: rgb(184,128,25);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="Harrypotter_Slytherin.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="grid-container">
+    <div class="item1">
+        
+      <italic>...doch daf&uuml;r wirst du hier noch echte Freunde finden.</italic>
+    </div>
+    <div class="item2">Gr&uuml;nder:<br>
+      Salazar Slytherin<br>
+      <br>Tier:<br>Schlange<br><br> Farben: <br>Gr&uuml;n & Silber
+      <br><br>Charakter:<br>Findigkeit, Ehrgeiz, Entschlossenheit<br> & Macht<br>
+      <br><br><br><br>Hauptfiguren:<br>Draco Malfoy, Voldemort, Severus Snape</div>
+    <div class="item3">Slytherins Medaillon<br><br>Typ:<br>Horkruxe
+      <br><br>Magische Eigenschaften:<br>Bringt die negativen Emotionen<br>des Tr&auml;gers zum Vorschein.
+      <br><br>Das Medaillon wurde &uuml;ber Generationen <br> hinweg weitergegeben, <br> bis es aus dem Haus der Blacks <br> gestolen wurde.
+      Danach <br> hatten es Mundungus Fletcher,<br>
+      Dolores Umbridge und Hermine Granger.
+
+      <br><br>Erster Besitzer:<br>Salazar Slytherin
+    
+    </div>
+    
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Slytherin/Salazar Slytherin.jpg" style="width:40%">
+      <div class="text">Salazar Slytherin</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Slytherin/Draco Malfoy 2.jpg" style="width:40%">
+      <div class="text">Draco Malfoy</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Slytherin/Lord Voldemort 2.jpg" style="width:40%">
+      <div class="text">Lord Voldemort</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Bilder/Slytherin/Slytherins Medaillon.jpg" style="width:40%">
+      <div class="text">Syltherins Medaillon</div>
+    </div>
+
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3500); // Change image every 2 seconds
+    }
+    </script>
+
+<div class="back"><a href="../home/home.html">zur&uuml;ck zu Homeseite</a></div>
+</body>
+
+</html>
